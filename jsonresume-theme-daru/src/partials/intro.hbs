@@ -1,0 +1,10 @@
+{{#resume.intro}}
+        <section id="sec_into">
+            <h1>{{label}}</h1>
+            {{#if content.length}}
+                {{#each content}}
+                    <p class="p">{{.}}</p>
+                {{/each}}
+             {{/if}}
+        </section>
+{{/resume.intro}}

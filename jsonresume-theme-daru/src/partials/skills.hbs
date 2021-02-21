@@ -1,0 +1,29 @@
+{{#resume.skill}}
+<section id="sec_skills">
+    <h1>{{label}}</h1>
+    <div class="skillContainer">
+    {{#if content.length}}
+        {{#each content}}
+        <div class="skillContent">
+            <h4>{{name}}</h4>
+            <ul>
+                {{#if keywords.length}}
+                    {{#each keywords}}
+                        {{#if this.length}}
+                            <ul>
+                                {{#each this}}
+                                    <li>{{.}}</li>
+                                {{/each}}
+                            </ul>
+                        {{/if}}
+                        {{{listCreator this}}}
+                        
+                    {{/each}}
+                {{/if}}
+            </ul>
+        </div>
+        {{/each}}
+    {{/if}}
+    </div>
+</section>
+{{/resume.skill}}

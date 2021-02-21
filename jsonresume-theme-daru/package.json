@@ -1,0 +1,86 @@
+{
+  "_from": "jsonresume-theme-daru",
+  "_id": "jsonresume-theme-daru@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-mQvITMqK+ub//j468EwiUeVvcagcfMrGsI4J6/7yogCOUIeYa9vsxgU/iPKnnSyA+X3iC+zPGPSMV5d6tH1kGA==",
+  "_location": "/jsonresume-theme-daru",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-daru",
+    "name": "jsonresume-theme-daru",
+    "escapedName": "jsonresume-theme-daru",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-daru/-/jsonresume-theme-daru-1.1.0.tgz",
+  "_shasum": "66d61b804b191f9402dfbe95d39d9586be5199b4",
+  "_spec": "jsonresume-theme-daru",
+  "_where": "/Users/gaaneshsoundararadjou/Documents/UpWork/Create json resume template/Code",
+  "author": {
+    "name": "Alessandro Biondi"
+  },
+  "bugs": {
+    "url": "https://github.com/biosan/jsonresume-theme-daru/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "address-format": "^0.0.3",
+    "handlebars": "^4.7.6",
+    "handlebars-wax": "^6.1.0",
+    "moment": "^2.24.0"
+  },
+  "deprecated": false,
+  "description": "Simple theme for JSON Resume. Based on caffeine-theme.",
+  "devDependencies": {
+    "@commitlint/cli": "~8.2.0",
+    "@commitlint/config-conventional": "~8.2.0",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "~3.0.9",
+    "jest": "^24.9.0",
+    "jest-handlebars": "^1.0.1",
+    "jest-image-snapshot": "^2.11.0",
+    "prettier": "^1.18.2",
+    "puppeteer": "^2.0.0"
+  },
+  "homepage": "https://github.com/biosan/jsonresume-theme-daru#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run pretty && npm run lint",
+      "pre-push": "npm run prepublishOnly"
+    }
+  },
+  "jest": {
+    "transform": {
+      "\\.hbs$": "jest-handlebars"
+    }
+  },
+  "license": "MIT",
+  "name": "jsonresume-theme-daru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biosan/jsonresume-theme-daru.git"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "prepublishOnly": "npm run pretty && npm run lint && npm run test",
+    "pretty": "prettier --write --ignore-path='*lock.json' '{src/**/*.{js,ts,json},./*{js,ts,json}}' ",
+    "test": "jest"
+  },
+  "version": "1.1.0"
+}

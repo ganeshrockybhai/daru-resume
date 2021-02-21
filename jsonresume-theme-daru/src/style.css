@@ -1,0 +1,243 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html {
+  background: white;
+}
+
+body {
+  font-family: Arial,serif;
+  font-style: normal;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+header{
+  border-bottom: 2px solid rgb(157 157 157);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.imgHeader{
+  width:90px;
+  height:64px;
+}
+.headertextcontainer{
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+.headertext > span{
+  font-family: "Liberation Sans Narrow",serif;
+  font-size: 10.1px;
+  color: rgb(0,0,0);
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#sec_name{
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.txtname{
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+.txtposition{
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+.txtcenter{
+  text-align: center;
+}
+h1{
+  font-family: Arial,serif;
+  font-size: 18.3px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+
+h3{
+  font-family: Arial,serif;
+  font-size: 12.1px;
+  color: rgb(0,0,0);
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+h4{
+  font-family: Arial,serif;
+  font-size: 10.1px;
+  color: rgb(0,0,0);
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+}
+
+p.p{
+  font-family: Arial,serif;
+  font-size: 10.1px;
+  color: rgb(0,0,0);
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+    -webkit-margin-after: 5px;
+            margin-block-end: 5px;
+}
+.skillContainer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skillContent{
+  width: Calc(100%/3);
+}
+
+.exp_header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.exp_content{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.exp_content_title{
+  width: 20%;
+}
+.exp_content_desc{
+    width: 80%;
+}
+.exp_content_desc > ul,li{
+  -webkit-margin-before: 10.1px;
+          margin-block-start: 10.1px;
+  -webkit-margin-after: 10.1px;
+          margin-block-end: 10.1px;
+}
+li{
+  list-style-position: outside;
+}
+ul > li {
+  font-family: Arial,serif;
+  font-size: 10.1px;
+  color: rgb(0,0,0);
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-margin-before: 2px;
+          margin-block-start: 2px;
+  -webkit-margin-after: 2px;
+          margin-block-end: 2px;
+}
+.exp_content_desc > li{
+  -webkit-margin-before: 10.1px;
+          margin-block-start: 10.1px;
+  -webkit-margin-after: 10.1px;
+          margin-block-end: 10.1px;
+  font-family: Arial,serif;
+  font-size: 10.1px;
+  color: rgb(0,0,0);
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+.exp_header_info > h4{
+       -webkit-margin-before: 10px;
+               margin-block-start: 10px; 
+}
+.page {
+  background: white;
+  width: 475px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 58px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}

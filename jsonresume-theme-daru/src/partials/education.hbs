@@ -1,0 +1,23 @@
+{{#resume.qualifications}}
+<section id="sec_experience">
+    <h1>{{label}}</h1>
+    {{#if content.length}}
+        {{#each content}}
+            <div class="exp_container">
+                <div class="exp_content">
+                    <div class="exp_content_title">
+                        <p class="p">{{year}}</p>
+                    </div>
+                    <div class="exp_content_desc">
+                        <p class="p">{{studytype}} 
+                            {{#if location}}
+                            <span>, {{location}}</span>
+                            {{/if}}                            
+                        </p>
+                    </div>
+                </div>
+            </div>            
+        {{/each}}
+    {{/if}}
+</section>
+{{/resume.qualifications}}

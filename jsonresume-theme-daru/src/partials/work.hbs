@@ -1,0 +1,62 @@
+{{#resume.works}}
+<section id="sec_experience">
+    <h1>{{label}}</h1>
+    {{#if content.length}}
+        {{#each content}}
+            <div class="exp_container">
+                <div class="exp_header">
+                    <div class="exp_header_info">
+                        <h4>{{startDate}} - {{endDate}}</h4>
+                    </div>
+                    <div class="exp_header_info">
+                        <h4>{{position}}</h4>
+                    </div>
+                    <div class="exp_header_info">
+                        <h4>{{company}}, {{location}}</h4>
+                    </div>
+                </div>
+                <div class="exp_content">
+                    <div class="exp_content_title">
+                        <p class="p">Description:</p>
+                    </div>
+                    <div class="exp_content_desc">
+                        {{#if description.length}}
+                            {{#each description}}
+                                <p class="p">{{.}}</p>
+                            {{/each}}
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="exp_content">
+                    <div class="exp_content_title">
+                        <p class="p">Technologies:</p>
+                    </div>
+                    <div class="exp_content_desc">
+                        {{#if technologies.length}}
+                            {{#each technologies}}
+                                <p class="p">{{.}}</p>
+                            {{/each}}
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="exp_content">
+                    <div class="exp_content_title">
+                        <p class="p">Achievements:</p>
+                    </div>
+                    <div class="exp_content_desc">
+                        {{#if achievements.length}}
+                            {{#each  achievements}}
+                                {{#if_eq 0 types}}
+                                    <li>{{desc}}</li>
+                                {{else}}
+                                <p class="p">{{desc}}</p>
+                                {{/if_eq}}
+                            {{/each}}
+                        {{/if}}
+                    </div>
+                </div>
+            </div>            
+        {{/each}}
+    {{/if}}
+</section>
+{{/resume.works}}
