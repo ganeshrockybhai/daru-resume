@@ -165,7 +165,7 @@
             "desc":"Migrated Subversion to Git for more than a hundred projects across the company. Approach taken was in alignment to the company’s needs, which was to perform a full duplex gradual synchronization between both source control systems. The migration also included the development of a dependency management tool in Python."
           },
           {
-            "types":2,
+            "types":1,
             "desc":""
           },
           {
@@ -206,11 +206,11 @@
           "desc":"Designed and developed several tools and plugins to automate repetitive tasks, managed Atlassian build grid (around 500K builds per year) and improved their infrastructure reliability. Two of these tools have been featured in the following:"
           },
           {
-            "types":3,
+            "types":0,
             "desc":"http://blogs.atlassian.com/2012/03/hung-build-killer-plugin-bambo/"
           },
           {
-            "types":3,
+            "types":0,
             "desc":"https://blogs.atlassian.com/2012/04/automate-ec2-image-bamboo-puppet/"
           },
           {
